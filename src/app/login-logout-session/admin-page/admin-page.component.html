@@ -1,0 +1,41 @@
+<div class="occupy">
+<div class="jumbotron container" style="background-color: white;" >
+        <h1 style="color: #2081C3">CapStore</h1> 
+        <img src="favicon.ico" height="100px" width="100px" align="right" style="margin-top: -7%">
+      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light float-right" style="margin-top: -3%;border-radius: 50px 20px;">
+  <div class="navbar-brand">Welcome Admin, {{id}}</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+	
+      <li class="nav-item">
+       <button class="btn btn-primary" (click)="logout()">Logout</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+	<br>
+<div style="margin-right: 73%;background-color: #EAF3F9;padding-bottom: 3%;border-radius: 50px 20px;padding-top: 3%"  >
+	<div class="form-group" align="center">
+	<button class=" btn btn-primary col-md-5" routerLink="coupons">Coupons</button>
+	</div>
+	<div class="form-group" align="center">
+	<button class=" btn btn-primary col-md-5" routerLink="view-feedback">View Feedback</button>
+	</div>
+	<div class="form-group" align="center">
+	<button class=" btn btn-primary col-md-5" routerLink="view-merchants">View Merchants</button>
+	</div>
+	<div class="form-group" align="center">
+	<button class=" btn btn-primary col-md-5" routerLink="image-upload">Image Upload</button>
+	</div>
+	<div class="form-group" align="center">
+	<button class=" btn btn-primary col-md-5" routerLink="product-update">Product Update</button>
+	</div>
+
+</div>	
+<router-outlet></router-outlet>
+</div>
